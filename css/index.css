@@ -227,6 +227,7 @@ html,
 body {
   height: 100%;
   font-family: "Titillium Web", sans-serif;
+  fomt-size: 1em;
 }
 
 h1,
@@ -281,7 +282,7 @@ nav a {
 .cta {
   display: flex;
   flex-flow: column nowrap;
-  font-size: 90px;
+  font-size: 5.63em;
   text-align: center;
   margin: auto;
 }
@@ -314,7 +315,6 @@ nav a {
 }
 
 .middle-img {
-  background-image: url("../img/mid-page-accent.jpg");
   width: 100%;
   margin: 40px 0;
 }
@@ -329,6 +329,10 @@ nav a {
 }
 
 /* Contact */
+footer .contact {
+  text-align: left;
+}
+
 .contact {
   margin-bottom: 20px;
 }
@@ -429,4 +433,33 @@ main {
 
 footer {
   text-align: center;
+}
+
+/*  Responsive Design Media Queries */
+
+@media(max-width: 800px) {
+  .container {
+    width: 95%;
+  }
+
+  nav {
+    flex-flow: row wrap;
+    margin: 20px 0;
+  }
+
+  .logo {
+    order: -1;
+    flex-basis: 100%;
+    text-align: center;
+    margin: 15px 0;
+  }
+
+  .intro {
+    margin: 30px 0;
+    font-size: .75em;
+  }
+
+  .intro img {
+    display: none;
+  }
 }
